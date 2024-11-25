@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://via.placeholder.com/40" alt="User Profile" class="profile-img">
+        <h2 class="username">Shilpa</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li id="today-tasks-nav" class="active"><span>Today tasks</span></li>
+          <li id="scheduled-tasks-nav"><span>Scheduled tasks</span></li>
+          <li><span>Settings</span></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1 id="main-header">Today Main Focus</h1>
+        <h2 id="sub-header">Design Team Meeting</h2>
+      </header>
+      <div class="task-input">
+        <input type="text" id="task-input" placeholder="What is your next task?" />
+        <button id="add-task-btn">+</button>
+      </div>
+      <ul id="task-list" class="task-list">
+        <!-- Dynamic tasks will appear here -->
+      </ul>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
